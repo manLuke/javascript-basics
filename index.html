@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex items-center gap-2 p-2 m-4">
+      <button class="p-2 rounded-md bg-blue-700 text-white" id="counterBtn">Increase</button>
+      <p id="counter">0</p>
+    </div>
+
+    <hr class="h-[2px] text-black bg-black my-2" />
+
+    <form id="nameForm" class="flex justify-center flex-col gap-2 max-w-52">
+      <input type="text" placeholder="name" id="username" class="p-2 rounded-sm border-black border-2" />
+      <button class="p-2 rounded-md bg-blue-700 text-white">Show</button>
+      <p class="text-xl" id="usernameOutput"></p>
+    </form>
+
+    <hr class="h-[2px] text-black bg-black my-2" />
+
+    <div class="calculator max-w-52">
+      <input type="number" id="num1" placeholder="First number" class="p-2 rounded-sm border-black border-2" />
+      <input type="number" id="num2" placeholder="Second number" class="p-2 rounded-sm border-black border-2" />
+      <button type="button" id="addBtn" class="p-2 rounded-md bg-blue-700 text-white">+</button>
+      <button type="button" id="subtractBtn" class="p-2 rounded-md bg-blue-700 text-white">-</button>
+      <button type="button" id="multiplyBtn" class="p-2 rounded-md bg-blue-700 text-white">*</button>
+      <button type="button" id="divideBtn" class="p-2 rounded-md bg-blue-700 text-white">/</button>
+      <p id="result"></p>
+    </div>
+
+    <hr class="h-[2px] text-black bg-black my-2" />
+  </body>
+</html>
